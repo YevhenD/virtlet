@@ -1,32 +1,74 @@
 hash: f9d8b64ab5e46d25b3ee7a894e1d5902dc2c25744dbce0299dc6ab5ecda448b8
-updated: 2016-09-26T19:24:59.827970432+02:00
+updated: 2016-09-29T10:39:24.567502729+02:00
 imports:
 - name: github.com/boltdb/bolt
   version: fff57c100f4dea1905678da7e90d92429dff2904
+- name: github.com/cloudfoundry-incubator/candiedyaml
+  version: 99c3df83b51532e3615f851d8c2dbb638f5313bf
 - name: github.com/coreos/etcd
-  version: e1efdd591e0aa7dfeebb03435703661d4e360e95
+  version: a781f4ebda827ef0a4e5296fb1b1f32a9236fb4d
   subpackages:
   - client
+  - pkg/fileutil
   - pkg/pathutil
+  - pkg/tlsutil
+  - pkg/transport
   - pkg/types
+- name: github.com/coreos/go-systemd
+  version: a63dfec412dc3675ec36888f359f8a1e5c3f740d
+  subpackages:
+  - journal
+- name: github.com/coreos/pkg
+  version: 3ac0863d7acf3bc44daf49afef8919af12f704ef
+  subpackages:
+  - capnslog
+- name: github.com/ghodss/yaml
+  version: aa0c862057666179de291b67d9f093d12b5a8473
 - name: github.com/gogo/protobuf
-  version: 0394392b81058a7f972029451f06e528bb18ba50
+  version: 89f1976ff373a3e549675d2f212c10f98b6c6316
   subpackages:
   - proto
 - name: github.com/golang/glog
   version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
 - name: github.com/golang/protobuf
-  version: 1f49d83d9aa00e6ce4fc8258c71cc7786aec968a
+  version: 87c000235d3d852c1628dc9490cd21ab36a7d69f
   subpackages:
   - proto
+- name: github.com/kelseyhightower/envconfig
+  version: 13674b2d056fb658a00ba3f36e78043ced07c924
 - name: github.com/nu7hatch/gouuid
   version: 179d4d0c4d8d407a32af483c2354df1d2c91e6c3
+- name: github.com/satori/go.uuid
+  version: b061729afc07e77a8aa4fad0a2fd840958f1942a
+- name: github.com/Sirupsen/logrus
+  version: 3ec0642a7fb6488f65b06f9040adc67e3990296a
+- name: github.com/tigera/libcalico-go
+  version: cfd409d6a532cb56f930c145ab0c55a2b6eac171
+  subpackages:
+  - lib/api
+  - lib/api/unversioned
+  - lib/backend
+  - lib/backend/api
+  - lib/backend/compat
+  - lib/backend/etcd
+  - lib/backend/model
+  - lib/client
+  - lib/errors
+  - lib/hash
+  - lib/hwm
+  - lib/net
+  - lib/numorstring
+  - lib/scope
+  - lib/selector
+  - lib/selector/parser
+  - lib/selector/tokenizer
+  - lib/validator
 - name: github.com/ugorji/go
-  version: b7eff9abce531d6aeda923e759ae668e56601d21
+  version: faddd6128c66c4708f45fdc007f575f75e592a3c
   subpackages:
   - codec
 - name: golang.org/x/net
-  version: f09c4662a0bd6bd8943ac7b4931e185df9471da4
+  version: 9f0e377a8a39bb99ff03459d77c135a0042878f0
   subpackages:
   - context
   - http2
@@ -40,7 +82,7 @@ imports:
   subpackages:
   - unix
 - name: google.golang.org/grpc
-  version: 71d2ea4f75286a63b606aca2422cd17ff37fd5b8
+  version: 6d7caeea7c3bbc318c636d366c82c328e2ea07b3
   subpackages:
   - codes
   - credentials
@@ -50,8 +92,14 @@ imports:
   - naming
   - peer
   - transport
+- name: gopkg.in/go-playground/validator.v8
+  version: 5f57d2222ad794d0dffb07e664ea05e2ee07d60c
+- name: gopkg.in/tchap/go-patricia.v2
+  version: 666120de432aea38ab06bd5c818f04f4129882c9
+  subpackages:
+  - patricia
 - name: k8s.io/kubernetes
-  version: 2a740120529279aa69e683b30be209b7550f52bc
+  version: 5d218f938a00e45ae7b59a4822e6802b5f1c0dd1
   repo: git@github.com:kubernetes/kubernetes.git
   vcs: git
   subpackages:
